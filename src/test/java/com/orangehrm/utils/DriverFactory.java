@@ -14,6 +14,7 @@ public class DriverFactory {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
+            System.out.println("Browser maximized");
         }
         return driver;
     }
